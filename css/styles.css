@@ -5,6 +5,7 @@
   --footer-contact-color: rgba(255, 255, 255, 0.6);
   --secondary-color: #ffffff;
   --secondary-other-color: #f5f4fa;
+  --icons-main-color: #afb1b8;
 }
 body {
   color: var(--main-first-color);
@@ -96,7 +97,22 @@ body {
   margin-left: 50px;
 }
 
+.header-icons {
+  fill: var(--main-second-color);
+  margin-right: 10px;
+}
+.header-icons:hover,
+.header-icons:focus {
+  fill: var(--navigation-btn-color);
+}
+
+.header-icons {
+  fill: currentColor;
+}
 .header-contacts {
+  display: flex;
+  align-items: center;
+
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -109,7 +125,7 @@ body {
 }
 
 .contacts-item:first-child {
-  margin-right: 50px;
+  margin-right: 30px;
 }
 /* -------------------Hero section studio-------------------- */
 
@@ -147,6 +163,7 @@ body {
   color: var(--secondary-color);
   background-color: var(--navigation-btn-color);
   border-radius: 4px;
+  border: none;
 }
 .btn-pointer {
   cursor: pointer;
@@ -251,16 +268,16 @@ body {
 }
 
 .social-networks-icon {
-  fill: #afb1b8;
+  fill: var(--icons-main-color);
 }
 
 .social-networks-link:hover,
 .social-networks-link:focus {
-  background-color: #2196f3;
+  background-color: var(--navigation-btn-color);
 }
 .social-networks-link:hover .social-networks-icon,
 .social-networks-link:focus .social-networks-icon {
-  fill: #ffffff;
+  fill: var(--secondary-color);
 }
 
 .team-card {
